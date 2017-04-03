@@ -1,7 +1,7 @@
 {
-  "name": "sinon2",
+  "name": "sinon2bug",
   "version": "1.0.0",
-  "description": "Simple Mocha/Sinon test",
+  "description": "Simple Mocha/Sinon test showing a bug in Sinon 2",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

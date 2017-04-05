@@ -15,7 +15,7 @@ describe('When I pass an object with an error and another property to a spy', ()
             foo: 'bar'
         })));
         it('is called with an object matching the error', () => assert.calledWith(mySpy, match({
-            err: new Error('WTF?')
+            err: match.instanceOf(Error).and(match.has('message', 'WTF?'))
         })));
     });
 });
